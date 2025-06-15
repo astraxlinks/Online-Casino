@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rage Bet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&family=DM+Mono&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <style>
+    /* Slot machine reels */
+    .slot-reel {
+      overflow: hidden;
+      position: relative;
+      height: 90px;
+    }
+    
+    .slot-symbol {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 90px;
+      font-size: 40px;
+    }
+    
+    /* Dice styles */
+    .dice {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      transform-style: preserve-3d;
+    }
+    
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: #1E1E1E;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: #5465FF;
+      border-radius: 4px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background: #6677FF;
+    }
+    
+    /* Glow effects */
+    .neon-glow {
+      box-shadow: 0 0 15px rgba(84, 101, 255, 0.5);
+    }
+    
+    .win-glow {
+      box-shadow: 0 0 15px rgba(0, 231, 1, 0.6);
+    }
+    
+    .lose-glow {
+      box-shadow: 0 0 15px rgba(255, 58, 94, 0.6);
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
